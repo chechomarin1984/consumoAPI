@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capacitaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Capacitaciones disponibles</h1>
+        <p>Información consumida desde la API</p>
+    </header>
+
+    <main class="contenedor">
+        <div class="acciones">
+            <input type="search" id="buscador" placeholder="Buscar por título o descripción...">
+            <button id="btn-recargar" type="button">Recargar</button>
+        </div>
+
+        <!-- Mensajes de estado: cargando, error o sin resultados -->
+        <p id="mensaje" class="mensaje" role="status"></p>
+
+        <!-- Aquí JavaScript inserta las tarjetas -->
+        <section id="lista-capacitaciones" class="grid"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
